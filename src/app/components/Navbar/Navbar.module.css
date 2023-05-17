@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
+
+.navbarContainer {
+  position: fixed;
+  font-family: "Source Code Pro", monospace;
+  width: 100%;
+  display: flex;
+  height: clamp(60px, 10vw, 100px);
+
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.scrolled {
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 90%;
+  height: fit-content;
+  top: 20px;
+}
+.column {
+  display: flex;
+  width: 50%;
+}
+.column.start {
+  justify-content: start;
+}
+.column.center {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 100%;
+  width: 100%;
+  height: fit-content;
+  align-content: center;
+  left: 100%;
+  transform: translate(-100%, -150%);
+  transition: transform 0.3s ease-in;
+}
+.column.center.showMenu {
+  transform: translate(-100%, 0);
+}
+.column.center.hideMenu {
+  transform: translate(-100%, -150%);
+}
+.column.end {
+  justify-content: end;
+}
+.mainLink {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  height: fit-content;
+
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.spacer {
+  height: 20px;
+}
+
+.menuButton {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  font-size: 20pt;
+}
+.linksOut {
+  display: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-style: medium;
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 40px);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Your CSS rules for small screens */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your CSS rules for medium screens */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* and (max-width: 1199px) */
+  /* Your CSS rules for large screens */
+  .column {
+    display: flex;
+    width: 33%;
+  }
+  .column.center {
+    display: flex;
+    justify-content: center;
+    transform: translate(0, 0);
+    width: 33%;
+    position: static;
+    transition: none;
+  }
+
+  .column.center.showMenu {
+    transform: translate(0, 0);
+  }
+
+  .column.center.hideMenu {
+    transform: translate(0, 0);
+  }
+
+  .linksOut {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    font-size: clamp(16px, 2vw, 40px);
+  }
+  .mainLink {
+    background-color: #ffffff00;
+    display: flex;
+    font-size: clamp(16px, 2vw, 40px);
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    background-color: none;
+    height: 30px;
+    padding: 0px;
+    gap: 20px;
+  }
+  .menuButton {
+    display: none;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { */
+/* Your CSS rules for extra large screens */
+/* .column {
+    display: flex;
+    width: 33%;
+  }
+  .column.center {
+    display: flex;
+    justify-content: center;
+    transform: translate(0, 0);
+    width: 33%;
+    position: static;
+    transition: none;
+  }
+  .linksOut {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    /* font-size: 20pt; */
+/* font-size: clamp(16px, 2vw, 40px);
+  }
+  .mainLink {
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    background-color: none;
+    height: 30px;
+    padding: 0px;
+    gap: 20px;
+  }
+  .menuButton {
+    display: none;
+  }
+} */

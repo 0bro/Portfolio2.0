@@ -6,6 +6,7 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace; */
   font-family: "Source Code Pro", monospace;
+
 }
 div {
   /* border: 1px red dashed; */
@@ -28,6 +29,12 @@ body {
 }
 
 body {
+  cursor: url("/MousePointer.svg") 25 25, auto; /* Replace 25 25 with the x and y coordinates of the cursor's hotspot */
+
+  background: white;
+  background-image: radial-gradient(#9a9a9a 1px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -19px -19px;
 }
 
 a {
@@ -41,64 +48,25 @@ a {
     color-scheme: dark;
   } */
 }
-#navbarContainer {
-  font-family: "Source Code Pro", monospace;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-#navbar {
-  background-color: ghostwhite;
-  border-radius: 10px;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
-  /* gap: 30%; */
-  position: absolute;
-  width: 90%;
-  height: 40px;
-  top: 20px;
-}
-#navbar .column {
-  display: flex;
-  width: 33%;
-  justify-content: center;
-}
-#navbar .column#start {
-  justify-content: start;
-}
-#navbar .column#end {
-  justify-content: end;
-}
-#mainLink {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 20px;
-  height: 20px;
+
+/* Template for Screen sizes */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Your CSS rules for small screens */
 }
 
-#linksOut {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  align-items: center;
-  padding: 0px;
-  gap: 10px;
-  font-size: 20pt;
-}
-#logo {
-  display: flex;
-  align-items: center;
-  font-style: medium;
-  font-weight: 500;
-  font-size: 20px;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your CSS rules for medium screens */
 }
 
-#spacer {
-  height: 10vh;
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Your CSS rules for large screens */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Your CSS rules for extra large screens */
 }
