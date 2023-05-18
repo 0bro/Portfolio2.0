@@ -26,9 +26,7 @@ function Navbar() {
     setMenu(!menu);
   };
   return (
-    <nav
-      className={`${styles.navbarContainer} ${scrolled ? styles.scrolled : {}}`}
-    >
+    <nav className={`${styles.navbarContainer} ${scrolled && styles.scrolled}`}>
       <div className={styles.navbar}>
         <div className={`${styles.start} ${styles.column}`}>
           <div className={styles.logo}>
@@ -36,9 +34,8 @@ function Navbar() {
           </div>
         </div>
         <div
-          className={`${menu ? styles.showMenu : styles.hideMenu}  ${
-            styles.column
-          } ${styles.center} `}
+          className={`${menu ? styles.showMenu : styles.hideMenu}  
+            ${styles.column} ${styles.center} `}
         >
           <div className={styles.mainLink}>
             <Link href="/">Home</Link>

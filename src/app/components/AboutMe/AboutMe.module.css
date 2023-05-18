@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap");
+
+.container {
+  position: static;
+  height: fit-content;
+}
+
+.showcaseContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.AboutMeContainer {
+  align-self: start;
+  height: 50px;
+  width: 100%;
+  display: border-box;
+}
+
+.AboutMe {
+  align-self: start;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  font-size: clamp(60px, 4vw, 100px);
+  line-height: clamp(50px, 3vw, 100px);
+  transition: transform .1s ease-in-out;
+}
+
+.trace {
+  color: rgba(0, 0, 0, 0);
+  align-self: start;
+  -webkit-text-stroke: 1px white;
+}
+.header {
+  z-index: -1;
+}
+
+.prettyBox {
+  display: border-box;
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  border: 1px solid #d9dceb;
+}
+
+.imageStyle {
+  width: 60%;
+  height: auto;
+  padding-right: 10%;
+  z-index: -1;
+}
+.imageContainer {
+  height: fit-content;
+  margin-top: -5%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.aboutMePara {
+  margin: 12px 0;
+}

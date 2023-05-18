@@ -1,29 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
 
-.navbarContainer {
-  position: fixed;
-  font-family: "Source Code Pro", monospace;
-  width: 100%;
-  display: flex;
-  height: clamp(60px, 10vw, 100px);
-
-  justify-content: center;
-  transition: background-color 0.3s ease-in-out;
-}
-.scrolled {
-  background-color: white;
-}
-
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   position: absolute;
-  width: 90%;
+  width: 100%;
   height: fit-content;
   top: 20px;
 }
+
+.navbarContainer {
+  display: flex;
+  position: fixed;
+  font-family: "Source Code Pro", monospace;
+  justify-content: center;
+  width: 90%;
+  height: clamp(60px, 10vh, 80px);
+  transition: background-color 0.1s ease-in-out;
+}
+.scrolled {
+  background-color: white;
+}
+
 .column {
   display: flex;
   width: 50%;
@@ -56,9 +56,7 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-
   height: fit-content;
-
   width: 100%;
   align-items: center;
   padding: 20px;

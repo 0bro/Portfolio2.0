@@ -6,7 +6,6 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace; */
   font-family: "Source Code Pro", monospace;
-
 }
 div {
   /* border: 1px red dashed; */
@@ -30,7 +29,6 @@ body {
 
 body {
   cursor: url("/MousePointer.svg") 25 25, auto; /* Replace 25 25 with the x and y coordinates of the cursor's hotspot */
-
   background: white;
   background-image: radial-gradient(#9a9a9a 1px, transparent 0);
   background-size: 30px 30px;
@@ -42,13 +40,31 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: "Source Code Pro", monospace;
+  font-style: medium;
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 28px);
+  color: #828282;
+}
+
+h1 {
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(48px, 4vw, 100px);
+  line-height: clamp(58px, 3vw, 100px);
+  letter-spacing: -0.04em;
+  padding-bottom: 20px;
+  color: #141420;
+}
+
 @media (prefers-color-scheme: dark) {
   /* For when we want to create a dark theme */
   /* html {
     color-scheme: dark;
   } */
 }
-
 
 /* Template for Screen sizes */
 /* Small devices (landscape phones, 576px and up) */

@@ -1,0 +1,18 @@
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #0074f8;
+  width: fit-content;
+  height: 32px;
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(18px, 2vw, 28px);
+  gap: 8px;
+}
+
+.arrow {
+  height: 100%;
+  width: auto;
+}

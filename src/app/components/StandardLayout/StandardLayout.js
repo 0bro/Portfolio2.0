@@ -1,4 +1,4 @@
-import "./StandardLayout.css";
+import styles from "./StandardLayout.module.css";
 import "../../globals.css";
 import Navbar from "../Navbar/Navbar";
 
@@ -12,12 +12,16 @@ export default function StandardLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <main>
-          <Navbar />
-          <div id="spacer" />
-          {children}
-        </main>
+        <div className={styles.container}>
+          <main className={styles.centerMe}>
+            <Navbar />
+            <div className={styles.spacer} />
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
+}
+{
 }

@@ -4,6 +4,7 @@
 #Hero {
   display: flex;
   justify-content: center;
+
 }
 
 #Hero div {
@@ -12,7 +13,6 @@
 #Hero #HeroContainer {
   display: flex;
   flex-direction: column;
-  width: 90%;
 }
 #Hero #HeroWordsContainer {
   height: fit-content;
@@ -72,7 +72,6 @@
     display: flex;
     height: fit-content;
     align-items: center;
-    width: 90%;
   }
   #Hero #HeroWordsContainer {
     /* height: fit-content; */
@@ -91,11 +90,9 @@
     display: flex;
     height: fit-content;
     align-items: center;
-    width: 90%;
   }
   #Hero #HeroWordsContainer {
     min-width: 50%;
-
     width: 50%;
   }
   #showcaseContainer {
