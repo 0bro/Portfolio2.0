@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef, useState } from "react";
-import styles from "./AboutMe.module.css";
-import Image from "next/image";
-import imageOfMe from "./../../../../public/imageOfME.jpg";
-import LinkUpArrow from "../LinkUpArrow/LinkUpArrow";
+import React, { useEffect, useRef, useState } from 'react';
+import styles from './AboutMe.module.css';
+import Image from 'next/image';
+import imageOfMe from './../../../../public/imageOfME.jpg';
+import LinkUpArrow from '../LinkUpArrow/LinkUpArrow';
 function AboutMe() {
-  const [offsetX, setOffsetX] = useState("-200px");
+  const [offsetX, setOffsetX] = useState('-200px');
   const handleScroll = () => {
     const data = {
       threshold: (window.visualViewport.height / 4).toFixed(0),
       distanceInPixel: Math.abs(
-        document.getElementById("MovingContainer").getBoundingClientRect().y -
+        document.getElementById('MovingContainer').getBoundingClientRect().y -
           window.visualViewport.height / 2
       ),
     };
@@ -29,8 +29,8 @@ function AboutMe() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -39,14 +39,14 @@ function AboutMe() {
         <div className={styles.showcaseContainer}>
           {/* TODO: Move into it's own component so we can make use it again lol */}
           <div id="MovingContainer" className={styles.AboutMeContainer}>
-            <h1
-              className={`${styles.AboutMe} ${styles.trace}`}
+            {/* <h1
+              className={`${styles.AboutMe} ${styles.header}`}
               style={{ transform: `translate(${offsetX}, 0)` }}
             >
               About Me
-            </h1>
+            </h1> */}
             <h1
-              className={`${styles.AboutMe} ${styles.header}`}
+              className={`${styles.AboutMe} ${styles.trace}`}
               style={{ transform: `translate(${offsetX}, 0)` }}
             >
               About Me

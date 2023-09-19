@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
 
-  presets: ["next/babel"],
+  presets: ['next/babel'],
 };
 
 module.exports = nextConfig;

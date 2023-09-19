@@ -1,5 +1,5 @@
-import "./Hero.css";
-import Showcase from "./HeroShowcase/HeroShowcase";
+import './Hero.css';
+import Showcase from './HeroShowcase/HeroShowcase';
 
 // TODO: Add the Arrow Down suggesting to scroll
 
@@ -10,18 +10,17 @@ export default function Hero(params) {
         <div id="HeroWordsContainer">
           <h1 id="HeroHead">Full Stack Developer</h1>
           <p id="HeroPara">
-            Full Stack Developer with 3 years of experience in building
-            high-quality applications and services, with a strong passion for
-            improving the development experience. Adept at collaborating with
-            others and thriving in challenging environments. Skilled in
-            JavaScript, Node.js, React, and AWS Cloud Services
+            Accomplished Full Stack Developer with 3+ years of experience
+            building high-quality, scalable applications and services. <br />
+            <br />
+            Specializing in OOP principles, scalable architecture, test first
+            development, supporting CI/CD pipelines, and AWS Cloud Services.
           </p>
           <button>VIEW RESUME</button>
         </div>
         <div id="showcaseContainer">
           <Showcase />
         </div>
-
       </div>
     </div>
   );
