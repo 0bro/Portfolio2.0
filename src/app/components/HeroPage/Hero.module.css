@@ -1,0 +1,132 @@
+
+.Hero {
+  display: flex;
+  justify-content: center;
+}
+
+.Hero div {
+  /* border: 1px red dashed; */
+}
+
+.Hero .HeroContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero .HeroWordsContainer {
+  height: fit-content;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 20px;
+}
+
+.Hero h1.HeroHead {
+  font-family: 'Outfit', sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 48px;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: -0.04em;
+  color: #141420;
+}
+
+.Hero p.HeroPara {
+  background-color: white;
+}
+
+.Hero button {
+  display: flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #0074f8;
+}
+.Hero button p {
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+}
+
+.showcaseContainer {
+  width: 100%;
+  height: 100vw;
+  display: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and(max-width: 767px) {
+  /* Your CSS rules for small screens */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and(max-width: 991px) {
+  /* Your CSS rules for medium screens */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Your CSS rules for large screens */
+
+  .Hero .HeroContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .Hero .HeroWordsContainer {
+  }
+  .Hero h1.HeroHead {
+    font-family: 'Outfit', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: -0.04em;
+    color: 0.14142;
+  }
+
+  .Hero p.HeroPara {
+    min-width: 50%;
+    width: 50%;
+  }
+
+  .Hero button {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    background: #0074f8;
+  }
+
+  .showcaseContainer {
+    width: 100%;
+    height: 100vw;
+    display: none;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  .Hero .HeroContainer {
+    flex-direction: row;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+  }
+
+  
+
+  .showcaseContainer {
+    height: auto;
+  } */
+
+/* Your CSS rules for extra large screens */
+/* } */

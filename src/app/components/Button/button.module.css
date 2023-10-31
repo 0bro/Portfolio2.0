@@ -1,0 +1,47 @@
+
+
+.Button {
+  display: flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #0074f8;
+  transition: all 0.3s ease-in-out;
+}
+.Button p {
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  font-style: light;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and(max-width: 767px) {
+  /* Your CSS rules for small screens */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and(max-width: 991px) {
+  /* Your CSS rules for medium screens */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Your CSS rules for large screens */
+  .Button {
+    padding: 16px 32px;
+  }
+  .Button p {
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    transition: all 0.3s ease-in-out;
+  }
+}

@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { AiFillGithub, AiFillLinkedin, AiOutlineMenu } from "react-icons/ai";
-import styles from "./Navbar.module.css";
-import { useEffect, useState } from "react";
+import Link from 'next/link';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMenu } from 'react-icons/ai';
+import styles from './Navbar.module.css';
+import { useEffect, useState } from 'react';
+import { Typography } from '@mui/material';
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -15,10 +16,10 @@ function Navbar() {
       setScrolled(scrollTop > 0);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -30,7 +31,7 @@ function Navbar() {
       <div className={styles.navbar}>
         <div className={`${styles.start} ${styles.column}`}>
           <div className={styles.logo}>
-            <p>👋 I&apos;m Ibrahim</p>
+            <Typography variant="body1">👋 I&apos;m Ibrahim</Typography>
           </div>
         </div>
         <div
@@ -38,10 +39,18 @@ function Navbar() {
             ${styles.column} ${styles.center} `}
         >
           <div className={styles.mainLink}>
-            <Link href="/">Home</Link>
-            <Link href="/">About</Link>
-            <Link href="/">Projects</Link>
-            <Link href="/">Contact</Link>
+            <Link href="/">
+              <Typography variant="body1">Home</Typography>
+            </Link>
+            <Link href="/">
+              <Typography variant="body1">About</Typography>
+            </Link>
+            <Link href="/">
+              <Typography variant="body1">Projects</Typography>
+            </Link>
+            <Link href="/">
+              <Typography variant="body1">Contact</Typography>
+            </Link>
           </div>
         </div>
         <div className={`${styles.column} ${styles.end}`}>

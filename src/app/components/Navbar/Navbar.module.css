@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
+
 
 .navbar {
   display: flex;
@@ -14,7 +14,7 @@
 .navbarContainer {
   display: flex;
   position: fixed;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   justify-content: center;
   width: 90%;
   height: clamp(60px, 10vh, 80px);
@@ -72,9 +72,10 @@
   width: fit-content;
   align-items: center;
   padding: 0px;
+  font-size: 30px;
   gap: 10px;
-  font-size: 20pt;
 }
+
 .linksOut {
   display: none;
 }
@@ -84,7 +85,6 @@
   width: 100%;
   font-style: medium;
   font-weight: 500;
-  font-size: clamp(16px, 2vw, 40px);
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -129,12 +129,10 @@
     align-items: center;
     padding: 0px;
     gap: 10px;
-    font-size: clamp(16px, 2vw, 40px);
   }
   .mainLink {
     background-color: #ffffff00;
     display: flex;
-    font-size: clamp(16px, 2vw, 40px);
     flex-direction: row;
     align-items: center;
     width: fit-content;
