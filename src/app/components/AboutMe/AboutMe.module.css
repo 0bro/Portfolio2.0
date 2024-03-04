@@ -1,6 +1,7 @@
 
 .container {
   position: static;
+  margin-top: 80px;
   height: fit-content;
 }
 
@@ -86,6 +87,7 @@
   .container {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: 80px;
     align-items: center;
   }
   .showcaseContainer {
@@ -104,7 +106,6 @@
     left: -100px;
     top: -100px;
     z-index: -1;
-    font-family: 'Outfit', sans-serif;
     font-style: bold;
     transition: transform 0.1s ease-in-out;
   }

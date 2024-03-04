@@ -12,7 +12,9 @@ export function Skills() {
   return (
     <>
       <div className={style.container}>
-        <h2 className={style.header}>Skills</h2>
+        <Typography variant="h2" className={style.header}>
+          Skills
+        </Typography>
         <SkillsCarousel
           title="Frontend"
           skills={[
@@ -20,6 +22,7 @@ export function Skills() {
             'Css3',
             'Node.js',
             'React.js',
+            'Typescript',
             'Next.js',
             'Angular',
             'jQuery ',
@@ -50,6 +53,7 @@ export function Skills() {
             'SNS',
             'SES',
             'Lambda',
+            'IAM',
           ]}
         />
         <SkillsCarousel

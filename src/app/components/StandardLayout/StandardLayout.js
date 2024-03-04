@@ -1,6 +1,7 @@
 import styles from './StandardLayout.module.css';
 import '../../globals.css';
 import Navbar from '../Navbar/Navbar';
+import { Footer } from '../Footer';
 
 export default function StandardLayout({ children }) {
   return (
@@ -9,6 +10,7 @@ export default function StandardLayout({ children }) {
         <Navbar />
         <div className={styles.spacer} />
         {children}
+        <Footer/>
       </main>
     </div>
   );

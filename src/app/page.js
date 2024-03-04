@@ -7,6 +7,7 @@ import { Skills } from './components/Skills/index.js';
 
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material';
 import { SplashScreenProvider } from './components/Guards/useSplashScreen/index.js';
+import { ContactMe } from './components/ContactMe/index.js';
 
 export default function HomePage() {
   let theme = createTheme({
@@ -25,8 +26,7 @@ export default function HomePage() {
       },
       h2: {
         fontFamily: 'var(--font-Outfit), monospace',
-        fontWeight: '800',
-        fontSize: '48px',
+        fontWeight: '900',
         letterSpacing: '-0.04em',
         paddingBottom: '20px',
         color: '#141420',
@@ -34,15 +34,46 @@ export default function HomePage() {
       h3: {
         fontFamily: 'var(--font-Outfit), monospace',
         fontWeight: '800',
-        fontSize: '36px',
+
         letterSpacing: '-0.04em',
         paddingBottom: '20px',
         color: '#141420',
       },
     },
+    components: {
+      MuiButton: {
+        variants: [
+          {
+            props: {
+              variant: 'beemo',
+            },
+            style: {
+              display: 'flex',
+              paddingTop: 14,
+              paddingBottom: 14,
+              paddingLeft: 24,
+              paddingRight: 24,
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: 8,
+              border: 'none',
+              textTransform: 'uppercase',
+              color: '#ffffff',
+              backgroundColor: '#0074f8',
+              '&:hover': {
+                borderWidth: 1,
+                borderStyle: 'solid',
+                borderColor: '#4d4d4d',
+                color: 'black',
+              },
+            },
+          },
+        ],
+      },
+    },
   });
   theme = responsiveFontSizes(theme);
-
+  // TODO: Develop CSS for Desktop and Ipad
   return (
     <React.StrictMode>
       <ThemeProvider theme={theme}>
@@ -51,6 +82,7 @@ export default function HomePage() {
             <Hero />
             <AboutMe />
             <Skills />
+            <ContactMe />
           </StandardLayout>
         </SplashScreenProvider>
       </ThemeProvider>
