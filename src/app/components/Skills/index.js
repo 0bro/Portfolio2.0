@@ -1,7 +1,7 @@
 'use strict';
 'use client';
 
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import Marquee from 'react-fast-marquee';
 import { animated, useSpring } from 'react-spring';
@@ -11,7 +11,7 @@ const style = require('./Skills.module.css');
 export function Skills() {
   return (
     <>
-      <div className={style.container}>
+      <Box className={style.container}>
         <Typography variant="h2" className={style.header}>
           Skills
         </Typography>
@@ -79,7 +79,7 @@ export function Skills() {
             'Java',
           ]}
         />
-      </div>
+      </Box>
     </>
   );
 }
@@ -92,17 +92,17 @@ export function Skills() {
  */
 function SkillsCarousel({ title, skills }) {
   return (
-    <div className={style.categoryContainer}>
-      <h3 className={style.skillCategory}>{title}</h3>
+    <Box className={style.categoryContainer}>
+      <Typography variant='h5' className={style.skillCategory}>{title}</Typography>
       <Marquee autoFill={true} pauseOnHover={true}>
-        <div className={style.skillList}>
+        <Box className={style.skillList}>
           {skills.map((item, index) => (
             <Typography variant="body1" key={index}>
               {item}
             </Typography>
           ))}
-        </div>
+        </Box>
       </Marquee>
-    </div>
+    </Box>
   );
 }

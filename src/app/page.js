@@ -56,6 +56,9 @@ export default function HomePage() {
               justifyContent: 'center',
               alignItems: 'center',
               gap: 8,
+              fontFamily: 'var(--font-Outfit), sans-serif',
+              fontWeight: '700',
+              borderRadius: 0,
               border: 'none',
               textTransform: 'uppercase',
               color: '#ffffff',
@@ -64,6 +67,7 @@ export default function HomePage() {
                 borderWidth: 1,
                 borderStyle: 'solid',
                 borderColor: '#4d4d4d',
+                backgroundColor: 'white',
                 color: 'black',
               },
             },
@@ -80,8 +84,8 @@ export default function HomePage() {
         <SplashScreenProvider>
           <StandardLayout>
             <Hero />
-            <AboutMe />
             <Skills />
+            <AboutMe />
             <ContactMe />
           </StandardLayout>
         </SplashScreenProvider>
