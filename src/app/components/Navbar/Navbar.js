@@ -12,7 +12,7 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+        window.scrollY || document.documentElement.scrollTop;
       setScrolled(scrollTop > 0);
     };
 

@@ -8,7 +8,7 @@ export default function StandardLayout({ children }) {
   return (
     <main>
       <Navbar />
-      <Container>
+      <Container sx={{ backgroundColor: 'transparent' }}>
         <div className={styles.spacer} />
         {children}
         <Footer />

@@ -1,25 +1,26 @@
-
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  position: absolute;
-  width: 100%;
-  height: fit-content;
-  top: 20px;
-}
-
 .navbarContainer {
   display: flex;
   position: fixed;
   font-family: 'Source Code Pro', monospace;
   justify-content: center;
-  width: 90%;
   height: clamp(60px, 10vh, 80px);
+  width: 100%;
+  z-index: 10;
   transition: background-color 0.1s ease-in-out;
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  max-width: 1080px;
+  height: fit-content;
+  top: 20px;
+}
+
 .scrolled {
   background-color: white;
   z-index: 100;
@@ -27,7 +28,6 @@
 
 .column {
   display: flex;
-  width: 50%;
 }
 .column.start {
   justify-content: start;
@@ -41,6 +41,7 @@
   height: fit-content;
   align-content: center;
   left: 100%;
+  z-index: -1;
   transform: translate(-100%, -150%);
   transition: transform 0.3s ease-in;
 }
@@ -102,9 +103,9 @@
 @media (min-width: 992px) {
   /* and (max-width: 1199px) */
   /* Your CSS rules for large screens */
+
   .column {
-    display: flex;
-    width: 33%;
+    width: 20%;
   }
   .column.center {
     display: flex;
@@ -130,6 +131,7 @@
     align-items: center;
     padding: 0px;
     gap: 10px;
+    font-size: 25px;
   }
   .mainLink {
     background-color: #ffffff00;
@@ -147,45 +149,3 @@
     display: none;
   }
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { */
-/* Your CSS rules for extra large screens */
-/* .column {
-    display: flex;
-    width: 33%;
-  }
-  .column.center {
-    display: flex;
-    justify-content: center;
-    transform: translate(0, 0);
-    width: 33%;
-    position: static;
-    transition: none;
-  }
-  .linksOut {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    /* font-size: 20pt; */
-/* font-size: clamp(16px, 2vw, 40px);
-  }
-  .mainLink {
-    background-color: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: fit-content;
-    justify-content: center;
-    background-color: none;
-    height: 30px;
-    padding: 0px;
-    gap: 20px;
-  }
-  .menuButton {
-    display: none;
-  }
-} */

@@ -8,6 +8,8 @@
   padding: 20px;
 }
 
+.BottomContainer {
+}
 @media (min-width: 576px) and(max-width: 767px) {
   /* Your CSS rules for small screens */
 }
@@ -19,4 +21,16 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
+  .BottomContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .IconsContainer {
+    font-size: 35px;
+  }
+  .IconClickBox {
+    padding: 10px 20px;
+  }
 }
