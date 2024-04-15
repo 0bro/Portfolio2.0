@@ -24,7 +24,7 @@ body {
 }
 
 body {
-  cursor: url('/MousePointer.svg') 25 25, auto; /* Replace 25 25 with the x and y coordinates of the cursor's hotspot */
+  cursor: url('./../../public/MousePointer.svg') 25 25, auto; /* Replace 25 25 with the x and y coordinates of the cursor's hotspot */
   background-image: radial-gradient(circle, #b5b5b550 2px, transparent 2px);
   background-position: 0 0, 25px 25px;
   background-size: 40px 40px;
