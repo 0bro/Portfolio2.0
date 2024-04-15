@@ -26,7 +26,7 @@ export default function HomePage() {
       },
       h2: {
         fontFamily: 'var(--font-Outfit), monospace',
-        fontWeight: '900',
+        fontWeight: '600',
         letterSpacing: '-0.04em',
         paddingBottom: '20px',
         color: '#141420',

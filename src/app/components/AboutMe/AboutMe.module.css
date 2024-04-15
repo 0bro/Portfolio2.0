@@ -25,7 +25,8 @@
   align-self: start;
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -80px;
+  font-size: 100px;
   z-index: 1;
   font-style: bold;
   transition: transform 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -38,7 +39,7 @@
   -webkit-text-fill-color: transparent;
 }
 .header {
-  z-index: -1;
+  z-index: -2;
 }
 
 .prettyBox {
