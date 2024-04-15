@@ -1,4 +1,5 @@
 import localFont from '@next/font/local';
+import Head from 'next/head';
 export const metadata = {
   title: 'Beemo Software Services',
   description: 'Solving Solutions with Software',
@@ -20,6 +21,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${SourceCodePro.variable} ${outfit.variable} font-sans`}
     >
+      <Head>
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+      </Head>
       <body>{children}</body>
     </html>
   );

@@ -77,7 +77,6 @@ export default function HomePage() {
     },
   });
   // theme = responsiveFontSizes(theme);
-  // TODO: Develop CSS for Desktop and Ipad
   return (
     <React.StrictMode>
       <ThemeProvider theme={theme}>

@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import styles from './AboutMe.module.css';
+
 import Image from 'next/image';
 import imageOfMe from './../../../../public/imageOfME.jpg';
 import LinkUpArrow from '../LinkUpArrow/LinkUpArrow';
 import { Box, Typography } from '@mui/material';
+import styles from './AboutMe.module.css';
 function AboutMe() {
   const [offsetX, setOffsetX] = useState('-1768px');
   const handleScroll = () => {
@@ -33,7 +34,7 @@ function AboutMe() {
           <Typography
             id="MovingContainer"
             variant="h1"
-            className={`${styles.AboutMe} ${styles.trace}`}
+            className={`${styles.AboutMe} ${styles.trace} `}
             sx={{
               transform: `translate(${offsetX}, 0)`,
             }}
