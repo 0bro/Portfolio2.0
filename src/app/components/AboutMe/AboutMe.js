@@ -33,7 +33,7 @@ function AboutMe() {
           <Typography
             id="MovingContainer"
             variant="h1"
-            className={`${styles.AboutMe} ${styles.trace} `}
+            className={`${styles.AboutMe} ${styles.trace}`}
             sx={{
               transform: `translate(${offsetX}, 0)`,
             }}
@@ -51,6 +51,7 @@ function AboutMe() {
           </Box>
           <Typography
             variant="h1"
+            id="MovingContainer"
             className={`${styles.AboutMe} ${styles.header}`}
             sx={{ transform: `translate(${offsetX}, 0)` }}
           >
