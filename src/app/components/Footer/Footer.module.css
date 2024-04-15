@@ -1,0 +1,36 @@
+.IconsContainer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+.IconClickBox {
+  padding: 20px;
+}
+
+.BottomContainer {
+}
+@media (min-width: 576px) and(max-width: 767px) {
+  /* Your CSS rules for small screens */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and(max-width: 991px) {
+  /* Your CSS rules for medium screens */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .BottomContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .IconsContainer {
+    font-size: 35px;
+  }
+  .IconClickBox {
+    padding: 10px 20px;
+  }
+}

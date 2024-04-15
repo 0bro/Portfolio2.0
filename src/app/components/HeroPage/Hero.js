@@ -1,15 +1,14 @@
 const style = require('./Hero.module.css');
-import { Typography } from '@mui/material';
-import { Button } from '../Button';
+import { Box, Button, Typography } from '@mui/material';
 import Showcase from './HeroShowcase/HeroShowcase';
 
 // TODO: Add the Arrow Down suggesting to scroll
 
 export default function Hero(params) {
   return (
-    <div className={style.Hero}>
-      <div className={style.HeroContainer}>
-        <div className={style.HeroWordsContainer}>
+    <Box className={style.Hero}>
+      <Box className={style.HeroContainer}>
+        <Box className={style.HeroWordsContainer}>
           <Typography variant="h1" className={style.HeroHead}>
             Full Stack Engineer
           </Typography>
@@ -20,12 +19,12 @@ export default function Hero(params) {
             challenging environments. Skilled in JavaScript, Node.js, React, and
             AWS Cloud Services.
           </Typography>
-          <Button> View resume</Button>
-        </div>
-        <div className={style.showcaseContainer}>
+          <Button variant='beemo'>View Resume</Button>
+        </Box>
+        <Box className={style.showcaseContainer}>
           <Showcase />
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }
