@@ -8,16 +8,16 @@ export function Footer() {
     <>
       <Box>
         <Typography variant="body1">
-          Designed by
+          Designed by{' '}
           <Link
             href="https://dribbble.com/istiaqahmed"
             style={{ textDecorationLine: 'underline' }}
           >
             Istiaq Ahmed
-          </Link>
+          </Link>{' '}
           & Developed by Ibrahim Muhammad Yusoof (ME)
         </Typography>
-        <Divider sx={{padding:'10px'}}/>
+        <Divider sx={{ padding: '10px' }} />
         <Box className={styles.BottomContainer}>
           <Box className={styles.IconsContainer}>
             <Link

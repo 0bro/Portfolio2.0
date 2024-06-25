@@ -1,0 +1,36 @@
+.topContainer {
+  padding: 0;
+}
+.headerContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0;
+  padding: 5px 0;
+  height: 60px;
+  border-bottom: solid 1px #141420;
+}
+.headerText {
+  color: #141420;
+  font-size: 20px;
+}
+.informationContainer {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subHeading {
+  font-size: 20px;
+  padding-top: 10px;
+  color: #565656;
+}
+.timeline {
+  font-size: 16px;
+  color: #9b51e0;
+}
+.body {
+  font-size: 14px;
+  color: #828282;
+  /* padding-left: 30px; */
+}

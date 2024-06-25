@@ -1,46 +1,43 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-
+import MySVG from './../../../../public/assets/About Me.svg';
 import Image from 'next/image';
 import imageOfMe from './../../../../public/imageOfME.jpg';
 import LinkUpArrow from '../LinkUpArrow/LinkUpArrow';
-import { Box, Typography } from '@mui/material';
+import { Box, Container, Divider, Typography } from '@mui/material';
 import styles from './AboutMe.module.css';
 function AboutMe() {
-  const [offsetX, setOffsetX] = useState('-1768px');
-  const handleScroll = () => {
-    const data = {
-      threshold: (window.visualViewport.height / 3).toFixed(0),
-      distanceInPixel:
-        document.getElementById('MovingContainer').getBoundingClientRect().y -
-        window.visualViewport.height / 2,
-    };
+  // const [offsetX, setOffsetX] = useState('-200px');
+  const [aboutMeBox, setAboutMeBox] = useState({ height: 0, width: 0 });
+  // const handleScroll = () => {
+  //   const data = {
+  //     threshold: (window.visualViewport.height / 3).toFixed(0),
+  //     distanceInPixel:
+  //       document.getElementById('MovingContainer').getBoundingClientRect().y -
+  //       window.visualViewport.height / 2,
+  //   };
 
-    if (data.distanceInPixel < data.threshold) {
-      setOffsetX('0');
-    } else setOffsetX('-1768px');
-  };
+  //   if (data.distanceInPixel < data.threshold) {
+  //     setOffsetX('0');
+  //   } else setOffsetX('-200px');
+  // };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // setAboutMeBox({
+    //   height: document.getElementById('MovingContainer').getBoundingClientRect()
+    //     .height,
+    //   width: document.getElementById('MovingContainer').getBoundingClientRect()
+    //     .width,
+    // });
+    // window.addEventListener('scroll', handleScroll);
+    // return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <>
       <Box className={styles.container}>
         <Box className={styles.showcaseContainer}>
-          <Typography
-            id="MovingContainer"
-            variant="h1"
-            className={`${styles.AboutMe} ${styles.trace} `}
-            sx={{
-              transform: `translate(${offsetX}, 0)`,
-            }}
-          >
-            About Me
-          </Typography>
           <Box className={styles.imageContainer}>
             <Image
               priority={true}
@@ -50,16 +47,12 @@ function AboutMe() {
             />
             <Box className={styles.prettyBox} />
           </Box>
-          <Typography
-            variant="h1"
-            id="MovingContainer"
-            className={`${styles.AboutMe} ${styles.header}`}
-            sx={{ transform: `translate(${offsetX}, 0)` }}
-          >
+        </Box>
+
+        <Box className={styles.wordContainer}>
+          <Typography variant="h2" className={`${styles.AboutMe}`}>
             About Me
           </Typography>
-        </Box>{' '}
-        <Box className={styles.wordContainer}>
           <Typography variant="body1" className={styles.aboutMePara}>
             Accomplished Full Stack Developer with 3+ years of experience
             building high-quality, scalable applications and services.
@@ -67,7 +60,7 @@ function AboutMe() {
             development, supporting CI/CD pipelines, and AWS Cloud Services.
           </Typography>
           <LinkUpArrow href="/">Read More</LinkUpArrow>
-        </Box>{' '}
+        </Box>
       </Box>
     </>
   );

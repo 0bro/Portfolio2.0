@@ -11,7 +11,23 @@ const SourceCodePro = localFont({
 });
 
 const outfit = localFont({
-  src: [{ path: '../../public/fonts/Outfit-VariableFont_wght.ttf' }],
+  src: [
+    {
+      path: '../../public/fonts//OutfitRegular.ttf',
+      weight: '500',
+      style: 'regular',
+    },
+    {
+      path: '../../public/fonts//OutfitBold.ttf',
+      weight: '700',
+      style: 'bold',
+    },
+    {
+      path: '../../public/fonts/OutfitBlack.ttf',
+      weight: '900',
+      style: 'black',
+    },
+  ],
   variable: '--font-Outfit',
 });
 
@@ -22,7 +38,13 @@ export default function RootLayout({ children }) {
       className={`${SourceCodePro.variable} ${outfit.variable} font-sans`}
     >
       <Head>
-        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="public/icon.ico" sizes="any" />
+        <link
+          rel="apple-touch-icon"
+          href="public/apple-touch-icon.png"
+          type="image/png"
+          sizes="32x32"
+        />
       </Head>
       <body>{children}</body>
     </html>
