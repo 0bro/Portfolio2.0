@@ -22,7 +22,7 @@ export default function Hero(params) {
               expand each project into interactive experiences.
             </strong>
           </Typography>
-          <Button variant="beemo">View Resume</Button>
+          {/* <Button variant="beemo">View Resume</Button> */}
         </Box>
         <Box className={style.showcaseContainer}>
           <Showcase />
