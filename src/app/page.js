@@ -106,7 +106,7 @@ export default function HomePage() {
             <ProjectsView count={3} />
             <Divider sx={{ margin: '30px 1px' }} />
             <ExperienceView />
-            <Divider sx={{ margin: '30px 1px' }} />
+
             {/* <ContactMe /> */}
           </StandardLayout>
         </SplashScreenProvider>

@@ -67,22 +67,19 @@
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 692px) {
   /* Your CSS rules for large screens */
 
   .Hero {
     height: 60vh;
     justify-content: center;
     align-items: center;
+
+    z-index: -2;
   }
 
   .Hero h1.HeroHead {
-    /* font-family: 'Outfit', sans-serif; */
-    /* font-style: bold; */
-    /* font-weight: 700; */
-    /* line-height: 96px; */
-    /* letter-spacing: -0.04em; */
-    /* color: 0.14142; */
+    line-height: unset;
   }
 
   .Hero p.HeroPara {
@@ -100,25 +97,22 @@
     background: #0074f8;
   }
 
+  .Hero .HeroContainer {
+    flex-direction: row;
+    /* background-color: blue; */
+    z-index: -1;
+    align-items: center;
+  }
   .showcaseContainer {
     position: absolute;
-    right: -200px;
-    transform: translate(0, -50%);
-    top: 50%;
-    height: fit-content;
-    width: auto;
-    z-index: -10;
+    right: 0;
+    width: 40%;
+    z-index: -1;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 /* @media (min-width: 1200px) {
-  .Hero .HeroContainer {
-    flex-direction: row;
-    display: flex;
-    height: fit-content;
-    align-items: center;
-  }
 
   
 

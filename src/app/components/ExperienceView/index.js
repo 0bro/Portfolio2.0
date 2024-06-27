@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import { useState } from 'react';
-import { experiences } from './../../data/experience.json';
+import experiences from '../../data/experience.js';
 const { default: Experience } = require('./Experience');
 
 export default function ExperienceView() {

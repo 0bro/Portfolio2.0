@@ -1,23 +1,36 @@
 import { Container, Typography } from '@mui/material';
 import Project from './Project';
-import { projects } from './../../data/projects.json';
+import projects from '../../data/projects.js';
 import { Button } from '../Button';
+import { useEffect, useState } from 'react';
 
 const style = require('./ProjectsView.module.css');
 
-function ProjectsView({ count = 0, ...props }) {
+function ProjectsView({ ...props }) {
+  const [seeMore, setSeeMore] = useState(false);
+
+  const lessProjects = projects.slice(0, 3);
   return (
     <>
       <Typography variant="h2">My Projects</Typography>
       <Container className={style.topContainer}>
         <Container className={style.projectsContainer}>
-          {projects.map((val, index) => {
-            if (count == 0 || index < count)
-              return <Project key={index} project={val} />;
-          })}
+          {!seeMore
+            ? lessProjects.map((val, index) => {
+                return <Project key={index} project={val} />;
+              })
+            : projects.map((val, index) => {
+                return <Project key={index} project={val} />;
+              })}
         </Container>
         <Container className={style.buttonStyle}>
-          <Button>View All Projects</Button>
+          <Button
+            onClick={() => {
+              setSeeMore(!seeMore);
+            }}
+          >
+            {!seeMore ? 'See More' : 'See Less'}
+          </Button>
         </Container>
       </Container>
     </>

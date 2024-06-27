@@ -13,13 +13,11 @@ export default function Hero(params) {
             Full Stack Engineer
           </Typography>
           <Typography variant="body1" className={style.HeroPara}>
-            With 3 years of experience in building high-quality applications and
-            services, with a strong passion for improving the development
-            experience. Adept at collaborating with others and thriving in
-            challenging environments. Skilled in JavaScript, Node.js, React, and
-            AWS Cloud Services.
+            Welcome to my portfolio! I enjoy tackling complex problems and
+            delivering reliable results. Explore my work to see my projects and
+            approach to development.
           </Typography>
-          <Button variant='beemo'>View Resume</Button>
+          <Button variant="beemo">View Resume</Button>
         </Box>
         <Box className={style.showcaseContainer}>
           <Showcase />

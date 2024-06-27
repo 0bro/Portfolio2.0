@@ -1,39 +1,12 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import MySVG from './../../../../public/assets/About Me.svg';
+import React from 'react';
 import Image from 'next/image';
 import imageOfMe from './../../../../public/imageOfME.jpg';
 import LinkUpArrow from '../LinkUpArrow/LinkUpArrow';
-import { Box, Container, Divider, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import styles from './AboutMe.module.css';
 function AboutMe() {
-  // const [offsetX, setOffsetX] = useState('-200px');
-  const [aboutMeBox, setAboutMeBox] = useState({ height: 0, width: 0 });
-  // const handleScroll = () => {
-  //   const data = {
-  //     threshold: (window.visualViewport.height / 3).toFixed(0),
-  //     distanceInPixel:
-  //       document.getElementById('MovingContainer').getBoundingClientRect().y -
-  //       window.visualViewport.height / 2,
-  //   };
-
-  //   if (data.distanceInPixel < data.threshold) {
-  //     setOffsetX('0');
-  //   } else setOffsetX('-200px');
-  // };
-
-  useEffect(() => {
-    // setAboutMeBox({
-    //   height: document.getElementById('MovingContainer').getBoundingClientRect()
-    //     .height,
-    //   width: document.getElementById('MovingContainer').getBoundingClientRect()
-    //     .width,
-    // });
-    // window.addEventListener('scroll', handleScroll);
-    // return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <>
       <Box className={styles.container}>
@@ -54,12 +27,13 @@ function AboutMe() {
             About Me
           </Typography>
           <Typography variant="body1" className={styles.aboutMePara}>
-            Accomplished Full Stack Developer with 3+ years of experience
-            building high-quality, scalable applications and services.
-            Specializing in OOP principles, scalable architecture, test first
-            development, supporting CI/CD pipelines, and AWS Cloud Services.
+            I grew up trying to scratch an itch for technology, started with MS
+            Paint, stumbled into PhotoShop and AfterEffects. My curiosity lead
+            me to find joy building a Craps game using Java. Since then I have
+            lead a career with <strong>passion</strong>,{' '}
+            <strong>curiosity</strong> and <strong>enthusiasm</strong>.
           </Typography>
-          <LinkUpArrow href="/">Read More</LinkUpArrow>
+          {/* <LinkUpArrow href="/">Read More</LinkUpArrow> */}
         </Box>
       </Box>
     </>
