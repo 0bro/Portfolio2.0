@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 
-const style = require('./Button.module.css');
+const style = require('./button.module.css');
 
 /**
  * Templated Button component
