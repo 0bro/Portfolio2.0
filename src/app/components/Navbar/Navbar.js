@@ -11,8 +11,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop =
-        window.scrollY || document.documentElement.scrollTop;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
       setScrolled(scrollTop > 0);
     };
 
@@ -39,7 +38,7 @@ function Navbar() {
             ${styles.column} ${styles.center} `}
         >
           <div className={styles.mainLink}>
-            <Link href="/">
+            {/* <Link href="/">
               <Typography variant="body1">Home</Typography>
             </Link>
             <Link href="/">
@@ -50,16 +49,20 @@ function Navbar() {
             </Link>
             <Link href="/">
               <Typography variant="body1">Contact</Typography>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className={`${styles.column} ${styles.end}`}>
-          <div className={styles.menuButton} onClick={() => toggleMenu()}>
+          {/* <div className={styles.menuButton} onClick={() => toggleMenu()}>
             <AiOutlineMenu />
-          </div>
+          </div> */}
           <div className={styles.linksOut}>
-            <AiFillGithub />
-            <AiFillLinkedin />
+            <Link href="https://github.com/0bro">
+              <AiFillGithub />
+            </Link>
+            <Link href="https://www.linkedin.com/in/ibrahim-muhammad-yusoof/">
+              <AiFillLinkedin />
+            </Link>
           </div>
         </div>
       </div>

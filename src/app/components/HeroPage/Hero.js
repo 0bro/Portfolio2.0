@@ -15,7 +15,12 @@ export default function Hero(params) {
           <Typography variant="body1" className={style.HeroPara}>
             Welcome to my portfolio! I enjoy tackling complex problems and
             delivering reliable results. Explore my work to see my projects and
-            approach to development.
+            approach to development. <br />
+            <br />
+            <strong>
+              This Portfolio is a work in progress, I am currently working to
+              expand each project into interactive experiences.
+            </strong>
           </Typography>
           <Button variant="beemo">View Resume</Button>
         </Box>

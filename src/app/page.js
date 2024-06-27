@@ -6,6 +6,7 @@ import StandardLayout from './components/StandardLayout/StandardLayout.js';
 import { Skills } from './components/Skills/index.js';
 
 import {
+  Box,
   Divider,
   ThemeProvider,
   createTheme,
@@ -99,13 +100,14 @@ export default function HomePage() {
         <SplashScreenProvider>
           <StandardLayout>
             <Hero />
-            <Skills />
             <Divider sx={{ margin: '30px 1px' }} />
             <AboutMe />
             <Divider sx={{ margin: '30px 1px' }} />
-            <ProjectsView count={3} />
-            <Divider sx={{ margin: '30px 1px' }} />
             <ExperienceView />
+            <Divider sx={{ margin: '30px 1px' }} />
+            <Skills />
+            <Divider sx={{ margin: '30px 1px' }} />
+            <ProjectsView />
 
             {/* <ContactMe /> */}
           </StandardLayout>
