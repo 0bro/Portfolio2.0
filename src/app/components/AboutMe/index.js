@@ -29,8 +29,8 @@ function AboutMe() {
             I grew up trying to scratch an itch for technology, started with MS
             Paint, stumbled into PhotoShop and AfterEffects. My curiosity lead
             me to find joy building a Craps game using Java. Since then I have
-            lead a career with <b>passion</b> ,
-            <b>curiosity</b> and <b>enthusiasm</b>.
+            lead a career with <b>passion</b>, <b>curiosity</b> and{' '}
+            <b>enthusiasm</b>.
           </Typography>
         </Box>
       </Box>
