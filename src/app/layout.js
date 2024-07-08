@@ -16,12 +16,12 @@ const SourceCodePro = localFont({
 const outfit = localFont({
   src: [
     {
-      path: '../../public/fonts//OutfitRegular.ttf',
+      path: '../../public/fonts/OutfitRegular.ttf',
       weight: '500',
       style: 'regular',
     },
     {
-      path: '../../public/fonts//OutfitBold.ttf',
+      path: '../../public/fonts/OutfitBold.ttf',
       weight: '700',
       style: 'bold',
     },
