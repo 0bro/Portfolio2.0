@@ -17,10 +17,10 @@ export default function Hero(params) {
             delivering reliable results. Explore my work to see my projects and
             approach to development. <br />
             <br />
-            <strong>
+            <b>
               This Portfolio is a work in progress, I am currently working to
               expand each project into interactive experiences.
-            </strong>
+            </b>
           </Typography>
           {/* <Button variant="beemo">View Resume</Button> */}
         </Box>

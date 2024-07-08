@@ -22,8 +22,8 @@ export default function HomePage() {
     typography: {
       body1: {
         fontFamily: 'var(--font-SourceCodePro), monospace',
-        fontStyle: 'medium',
-        fontWeight: '500',
+        fontStyle: 'regular',
+        fontWeight: '400',
         color: '#828282',
       },
       h1: {

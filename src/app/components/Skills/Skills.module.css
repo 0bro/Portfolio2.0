@@ -57,5 +57,5 @@
 .skillList:hover p:hover {
   transition: all 0.3s ease-in-out;
   color: black;
-  font-weight: bold;
+  font-weight: 600;
 }
