@@ -2,9 +2,7 @@
 'use client';
 
 import { Box, Typography } from '@mui/material';
-import { useEffect, useRef, useState } from 'react';
 import Marquee from 'react-fast-marquee';
-import { animated, useSpring } from 'react-spring';
 
 const style = require('./Skills.module.css');
 
@@ -22,26 +20,16 @@ export function Skills() {
             'Css3',
             'Node.js',
             'React.js',
-            'Typescript',
             'Next.js',
-            'Angular',
-            'jQuery ',
-            'styled-components',
+            'Material UI',
           ]}
         />
         <SkillsCarousel
           title="Backend"
-          skills={[
-            'Express',
-            'Jest',
-            'Docker',
-            'Pino-logger',
-            'SQL',
-            'MongoDB',
-          ]}
+          skills={['Express', 'Docker', 'Jest']}
         />
         <SkillsCarousel
-          title="Cloud"
+          title="AWS Cloud"
           skills={[
             'Cognito',
             'DynamoDB',
@@ -58,26 +46,11 @@ export function Skills() {
         />
         <SkillsCarousel
           title="Mobile"
-          skills={[
-            'React Native',
-            'XCode',
-            'Android Studio',
-            'Ionic',
-            'React Native',
-            'XCode',
-            'Android Studio',
-            'Ionic',
-          ]}
+          skills={['React Native', 'XCode', 'Android Studio', 'Ionic']}
         />
         <SkillsCarousel
           title="Software"
-          skills={[
-            'JavaScript ES6',
-            'Python',
-            'C# with Unity',
-            'C/C++',
-            'Java',
-          ]}
+          skills={['JavaScript ES6', 'C# with Unity', 'C/C++', 'Java']}
         />
       </Box>
     </>
@@ -93,7 +66,9 @@ export function Skills() {
 function SkillsCarousel({ title, skills }) {
   return (
     <Box className={style.categoryContainer}>
-      <Typography variant='h5' className={style.skillCategory}>{title}</Typography>
+      <Typography variant="h5" className={style.skillCategory}>
+        {title}
+      </Typography>
       <Marquee autoFill={true} pauseOnHover={true}>
         <Box className={style.skillList}>
           {skills.map((item, index) => (
