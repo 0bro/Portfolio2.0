@@ -15,7 +15,7 @@ import {
 import { SplashScreenProvider } from './components/Guards/useSplashScreen/index.js';
 import ProjectsView from './components/ProjectsView/index.js';
 import ExperienceView from './components/ExperienceView/index.js';
-// import { ContactMe } from './components/ContactMe/index.js';
+
 
 export default function HomePage() {
   let theme = createTheme({
@@ -108,8 +108,6 @@ export default function HomePage() {
             <Skills />
             <Divider sx={{ margin: '30px 1px' }} />
             <ProjectsView />
-
-            {/* <ContactMe /> */}
           </StandardLayout>
         </SplashScreenProvider>
       </ThemeProvider>

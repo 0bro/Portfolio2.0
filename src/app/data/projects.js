@@ -3,7 +3,7 @@ const projects = [
     title: 'Cloud Storage Web App',
     images: [
       {
-        path: '/CloudWebApp.jpg',
+        path: require('../../../public/CloudWebApp.jpg'),
         alt: 'Illustration of a Cloud',
         caption: '',
       },
@@ -46,7 +46,7 @@ const projects = [
     title: 'Project X',
     images: [
       {
-        path: '/ProjectX.png',
+        path: require('../../../public/ProjectX.png'),
         alt: '8 Bit Elf Character ',
         caption: '',
       },
@@ -88,7 +88,7 @@ const projects = [
       'Investigative Report: Integrating OpenMP, TBB, and MPI into VSCode on MacOS v11.0+',
     images: [
       {
-        path: '/OpenMPImage.jpeg',
+        path: require('../../../public/OpenMPImage.jpeg'),
         alt: 'Image of M1 Silicon Chip',
         caption: '',
       },
@@ -114,7 +114,7 @@ const projects = [
     title: 'Simon says with Machine Learning and Computer Vision',
     images: [
       {
-        path: '/SimonSaysLogo.png',
+        path: require('../../../public/SimonSaysLogo.png'),
         alt: 'Half Robotic Face',
         caption: '',
       },
@@ -149,7 +149,7 @@ const projects = [
     title: 'Semi-Autonomous RC Car using RobotC',
     images: [
       {
-        path: '/RobotC.png',
+        path: require('../../../public/RobotC.png'),
         alt: 'Robot C Logo',
         caption: '',
       },
@@ -175,7 +175,7 @@ const projects = [
     title: 'Fitty Mobile Application: Fitness & Social media',
     images: [
       {
-        path: '/FittySocial.png',
+        path: require('../../../public/FittySocial.png'),
         alt: 'Icon of Spoon and Fork on Green background',
         caption: '',
       },
@@ -203,7 +203,7 @@ const projects = [
     title: 'Restaurant Loyalty Rewards App',
     images: [
       {
-        path: '/Loyalty.png',
+        path: require('../../../public/Loyalty.png'),
         alt: '',
         caption: '',
       },
@@ -227,7 +227,7 @@ const projects = [
     title: 'Employee Management and Onboarding Back End Application',
     images: [
       {
-        path: '/Employee.png',
+        path: require('../../../public/Employee.png'),
         alt: 'Icon of Man in tie smiling',
         caption: '',
       },

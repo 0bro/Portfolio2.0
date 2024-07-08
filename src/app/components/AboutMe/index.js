@@ -3,7 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 import imageOfMe from './../../../../public/imageOfME.jpg';
-import LinkUpArrow from '../LinkUpArrow/LinkUpArrow';
 import { Box, Typography } from '@mui/material';
 import styles from './AboutMe.module.css';
 function AboutMe() {
@@ -33,7 +32,6 @@ function AboutMe() {
             lead a career with <strong>passion</strong>,{' '}
             <strong>curiosity</strong> and <strong>enthusiasm</strong>.
           </Typography>
-          {/* <LinkUpArrow href="/">Read More</LinkUpArrow> */}
         </Box>
       </Box>
     </>

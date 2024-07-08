@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
-import { useState } from 'react';
-
+import arrowDown from '../../../../../public/arrowDown.svg';
+import arrowUp from '../../../../../public/arrowUp.svg';
 const style = require('./experience.module.css');
 
 export default function Experience({
@@ -20,9 +20,9 @@ export default function Experience({
             {title}
           </Typography>
           {toggle ? (
-            <Image src="/arrowDown.svg" alt="asd" width={25} height={25} />
+            <Image src={arrowDown} alt="Arrow Down" width={25} height={25} />
           ) : (
-            <Image src="/arrowUp.svg" alt="asd" width={25} height={25} />
+            <Image src={arrowUp} alt="Arrow Down" width={25} height={25} />
           )}
         </Box>
         {toggle && (
