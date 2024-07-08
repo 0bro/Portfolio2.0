@@ -3,7 +3,7 @@ const projects = [
     title: 'Cloud Storage Web App',
     images: [
       {
-        path: '/assets/CloudWebApp.jpg',
+        path: '/CloudWebApp.jpg',
         alt: 'Illustration of a Cloud',
         caption: '',
       },
@@ -46,7 +46,7 @@ const projects = [
     title: 'Project X',
     images: [
       {
-        path: '/assets/ProjectX.png',
+        path: '/ProjectX.png',
         alt: '8 Bit Elf Character ',
         caption: '',
       },
@@ -88,7 +88,7 @@ const projects = [
       'Investigative Report: Integrating OpenMP, TBB, and MPI into VSCode on MacOS v11.0+',
     images: [
       {
-        path: '/assets/OpenMPImage.jpeg',
+        path: '/OpenMPImage.jpeg',
         alt: 'Image of M1 Silicon Chip',
         caption: '',
       },
@@ -114,7 +114,7 @@ const projects = [
     title: 'Simon says with Machine Learning and Computer Vision',
     images: [
       {
-        path: '/assets/SimonSaysLogo.png',
+        path: '/SimonSaysLogo.png',
         alt: 'Half Robotic Face',
         caption: '',
       },
@@ -149,7 +149,7 @@ const projects = [
     title: 'Semi-Autonomous RC Car using RobotC',
     images: [
       {
-        path: '/assets/RobotC.png',
+        path: '/RobotC.png',
         alt: 'Robot C Logo',
         caption: '',
       },
@@ -175,7 +175,7 @@ const projects = [
     title: 'Fitty Mobile Application: Fitness & Social media',
     images: [
       {
-        path: '/assets/FittySocial.png',
+        path: '/FittySocial.png',
         alt: 'Icon of Spoon and Fork on Green background',
         caption: '',
       },
@@ -203,7 +203,7 @@ const projects = [
     title: 'Restaurant Loyalty Rewards App',
     images: [
       {
-        path: '/assets/Loyalty.png',
+        path: '/Loyalty.png',
         alt: '',
         caption: '',
       },
@@ -227,7 +227,7 @@ const projects = [
     title: 'Employee Management and Onboarding Back End Application',
     images: [
       {
-        path: '/assets/Employee.png',
+        path: '/Employee.png',
         alt: 'Icon of Man in tie smiling',
         caption: '',
       },
