@@ -1,5 +1,8 @@
 import localFont from '@next/font/local';
 import Head from 'next/head';
+import FaviHref from './../../public/icon.ico';
+import FaviAppleHref from './../../public/apple-touch-icon.png';
+
 export const metadata = {
   title: 'Beemo Software Services',
   description: 'Solving Solutions with Software',
@@ -38,10 +41,10 @@ export default function RootLayout({ children }) {
       className={`${SourceCodePro.variable} ${outfit.variable} font-sans`}
     >
       <Head>
-        <link rel="icon" href="public/icon.ico" sizes="any" />
+        <link rel="icon" href={FaviHref} sizes="any" />
         <link
           rel="apple-touch-icon"
-          href="public/apple-touch-icon.png"
+          href={FaviAppleHref}
           type="image/png"
           sizes="32x32"
         />
