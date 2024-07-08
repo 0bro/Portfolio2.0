@@ -10,14 +10,12 @@
 }
 
 .topContainer {
-  padding: 0;
   background-color: white;
 }
 .headerContainer {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0;
   padding: 5px 0;
   height: 60px;
   border-bottom: solid 1px #141420;
@@ -27,7 +25,6 @@
   font-size: 20px;
 }
 .informationContainer {
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;

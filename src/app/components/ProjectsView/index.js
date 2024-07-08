@@ -1,4 +1,4 @@
-import { Container, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Project from './Project';
 import projects from '../../data/projects.js';
 import { Button } from '../Button';
@@ -13,8 +13,8 @@ function ProjectsView({ ...props }) {
   return (
     <>
       <Typography variant="h2">My Projects</Typography>
-      <Container className={style.topContainer}>
-        <Container className={style.projectsContainer}>
+      <Box className={style.topContainer}>
+        <Box className={style.projectsContainer}>
           {!seeMore
             ? lessProjects.map((val, index) => {
                 return <Project key={index} project={val} />;
@@ -22,8 +22,8 @@ function ProjectsView({ ...props }) {
             : projects.map((val, index) => {
                 return <Project key={index} project={val} />;
               })}
-        </Container>
-        <Container className={style.buttonStyle}>
+        </Box>
+        <Box className={style.buttonStyle}>
           <Button
             onClick={() => {
               setSeeMore(!seeMore);
@@ -31,8 +31,8 @@ function ProjectsView({ ...props }) {
           >
             {!seeMore ? 'See More' : 'See Less'}
           </Button>
-        </Container>
-      </Container>
+        </Box>
+      </Box>
     </>
   );
 }

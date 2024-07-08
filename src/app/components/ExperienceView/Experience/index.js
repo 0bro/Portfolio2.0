@@ -1,4 +1,4 @@
-import { Container, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -14,8 +14,8 @@ export default function Experience({
 
   return (
     <>
-      <Container className={style.topContainer}>
-        <Container className={style.headerContainer} onClick={onClick}>
+      <Box className={style.topContainer}>
+        <Box className={style.headerContainer} onClick={onClick}>
           <Typography variant="body" className={style.headerText}>
             {title}
           </Typography>
@@ -24,9 +24,9 @@ export default function Experience({
           ) : (
             <Image src="/arrowUp.svg" alt="asd" width={25} height={25} />
           )}
-        </Container>
+        </Box>
         {toggle && (
-          <Container className={style.informationContainer}>
+          <Box className={style.informationContainer}>
             <Typography variant="body" className={style.subHeading}>
               {company}
             </Typography>
@@ -40,9 +40,9 @@ export default function Experience({
                 </Typography>
               );
             })}
-          </Container>
+          </Box>
         )}
-      </Container>
+      </Box>
     </>
   );
 }
