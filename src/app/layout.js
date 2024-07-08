@@ -1,4 +1,3 @@
-import localFont from '@next/font/local';
 import Head from 'next/head';
 import FaviHref from './../../public/icon.ico';
 import FaviAppleHref from './../../public/apple-touch-icon.png';
@@ -8,39 +7,25 @@ export const metadata = {
   description: 'Solving Solutions with Software',
 };
 
-const SourceCodePro = localFont({
-  src: [{ path: '../../public/fonts/SourceCodePro-VariableFont_wght.ttf' }],
-  variable: '--font-SourceCodePro',
-});
-
-const outfit = localFont({
-  src: [
-    {
-      path: '../../public/fonts/OutfitRegular.ttf',
-      weight: '500',
-      style: 'regular',
-    },
-    {
-      path: '../../public/fonts/OutfitBold.ttf',
-      weight: '700',
-      style: 'bold',
-    },
-    {
-      path: '../../public/fonts/OutfitBlack.ttf',
-      weight: '900',
-      style: 'black',
-    },
-  ],
-  variable: '--font-Outfit',
-});
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${SourceCodePro.variable} ${outfit.variable} font-sans`}
-    >
+    <html lang="en">
       <Head>
+        <link
+          rel="preload"
+          href="/fonts/SourceCodePro-VariableFont_wght.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Outfit-VariableFont_wght.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <link rel="icon" href={FaviHref} sizes="any" />
         <link
           rel="apple-touch-icon"

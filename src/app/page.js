@@ -21,38 +21,38 @@ export default function HomePage() {
   let theme = createTheme({
     typography: {
       body1: {
-        fontFamily: 'var(--font-SourceCodePro), monospace',
+        fontFamily: 'Source Code Pro, monospace',
         fontStyle: 'regular',
         fontWeight: '400',
         color: '#828282',
       },
       h1: {
-        fontFamily: 'var(--font-Outfit), monospace',
+        fontFamily: 'Outfit, monospace',
         fontWeight: '700',
         letterSpacing: '-0.04em',
         color: '#141420',
       },
       backgroundHeader: {
-        fontFamily: 'var(--font-Outfit), monospace',
+        fontFamily: 'Outfit, monospace',
         fontWeight: '900',
         fontSize: '-0.04em',
         color: '#141420',
       },
       h2: {
-        fontFamily: 'var(--font-Outfit), monospace',
+        fontFamily: 'Outfit, monospace',
         fontWeight: '700',
         letterSpacing: '-0.04em',
         color: '#141420',
       },
       h3: {
-        fontFamily: 'var(--font-Outfit), monospace',
+        fontFamily: 'Outfit, monospace',
         fontWeight: '700',
         letterSpacing: '-0.04em',
         paddingBottom: '20px',
         color: '#141420',
       },
       h4: {
-        fontFamily: 'var(--font-Outfit), monospace',
+        fontFamily: 'Outfit, monospace',
         fontWeight: '700',
         color: '#141420',
       },
@@ -73,7 +73,7 @@ export default function HomePage() {
               justifyContent: 'center',
               alignItems: 'center',
               gap: 8,
-              fontFamily: 'var(--font-Outfit), sans-serif',
+              fontFamily: 'Outfit, sans-serif',
               fontWeight: '700',
               borderRadius: 0,
               border: 'none',
