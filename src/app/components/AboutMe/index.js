@@ -29,7 +29,7 @@ function AboutMe() {
             I grew up trying to scratch an itch for technology, started with MS
             Paint, stumbled into PhotoShop and AfterEffects. My curiosity lead
             me to find joy building a Craps game using Java. Since then I have
-            lead a career with <strong>passion</strong>,{' '}
+            lead a career with <strong className={styles.bold}>passion</strong>,
             <strong>curiosity</strong> and <strong>enthusiasm</strong>.
           </Typography>
         </Box>

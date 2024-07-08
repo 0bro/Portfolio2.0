@@ -4,6 +4,9 @@
   height: fit-content;
   padding: 0;
 }
+.bold{
+  font-weight: 600;
+}
 .TextContainer {
   /* padding: 0; */
 }
