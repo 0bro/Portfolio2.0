@@ -37,7 +37,7 @@ const experiences = [
     images: [{ path: '', alt: '', caption: '' }],
     tags: ['JavaScript', 'React Native', 'React.js'],
     location: 'Toronto, On (Remote)',
-    timeline: 'January 2023 - December 2023',
+    timeline: 'May 2022 - December 2022',
     description: [],
     bullets: [
       'Introduced features for Android app in React Native, adding vendor search, map view, and visual updates to increase alignment with iOS from 60% to 90%.',
