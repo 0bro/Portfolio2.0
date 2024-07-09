@@ -3,7 +3,7 @@ import FaviHref from './../../public/icon.ico';
 import FaviAppleHref from './../../public/apple-touch-icon.png';
 
 export const metadata = {
-  title: 'Beemo Software Services',
+  title: 'Ibrahims Portfolio',
   description: 'Solving Solutions with Software',
 };
 
