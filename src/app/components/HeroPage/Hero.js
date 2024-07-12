@@ -13,20 +13,18 @@ export default function Hero(params) {
             Full Stack Engineer
           </Typography>
           <Typography variant="body1" className={style.HeroPara}>
-            Welcome to my portfolio! I enjoy tackling complex problems and
+            Hello, my name is Ibrahim! Welcome to my portfolio, I enjoy tackling complex problems and
             delivering reliable results. Explore my work to see my projects and
             approach to development. <br />
             <br />
-            
-              This portfolio is a <b>work in progress</b>, I am currently working to
-              expand each project into interactive experiences.
-            
+            This portfolio is a <b>work in progress</b>, I am currently working
+            to expand each project into interactive experiences.
           </Typography>
           {/* <Button variant="beemo">View Resume</Button> */}
         </Box>
-        <Box className={style.showcaseContainer}>
+        {/* <Box className={style.showcaseContainer}>
           <Showcase />
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );
