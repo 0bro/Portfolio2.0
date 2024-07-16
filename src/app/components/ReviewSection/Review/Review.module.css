@@ -1,0 +1,22 @@
+.container {
+  background-color: #ffffff;
+  width: 372px;
+  height: 145px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 12px #0000004e;
+  padding: 24px;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+.header {
+  width: 100%;
+}
+.author {
+  width: 100%;
+  text-align: right;
+  text-decoration: underline;
+}

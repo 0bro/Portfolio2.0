@@ -15,7 +15,7 @@ import {
 import { SplashScreenProvider } from './components/Guards/useSplashScreen/index.js';
 import ProjectsView from './components/ProjectsView/index.js';
 import ExperienceView from './components/ExperienceView/index.js';
-
+import ReviewSection from './components/ReviewSection';
 
 export default function HomePage() {
   let theme = createTheme({
@@ -36,6 +36,18 @@ export default function HomePage() {
         fontFamily: 'Outfit, monospace',
         fontWeight: '900',
         fontSize: '-0.04em',
+        color: '#141420',
+      },
+      reviewHeader: {
+        fontFamily: 'Outfit, monospace',
+        fontWeight: '600',
+        fontSize: '24px',
+        color: '#141420',
+      },
+      reviewAuthor: {
+        fontFamily: 'Outfit, monospace',
+        fontWeight: '300',
+        fontSize: '16px',
         color: '#141420',
       },
       h2: {
@@ -100,6 +112,7 @@ export default function HomePage() {
         <SplashScreenProvider>
           <StandardLayout>
             <Hero />
+            <ReviewSection />
             <Divider sx={{ margin: '30px 1px' }} />
             <AboutMe />
             <Divider sx={{ margin: '30px 1px' }} />

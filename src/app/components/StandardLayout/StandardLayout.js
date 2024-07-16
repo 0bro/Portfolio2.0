@@ -1,4 +1,4 @@
-import styles from './StandardLayout.module.css';
+import style from './StandardLayout.module.css';
 import '../../globals.css';
 import Navbar from '../Navbar/Navbar';
 import { Footer } from '../Footer';
@@ -8,10 +8,10 @@ export default function StandardLayout({ children }) {
   return (
     <main>
       <Navbar />
-      <Container sx={{ backgroundColor: 'transparent' }}>
-        <div className={styles.spacer} />
+      <Container>
+        <div className={style.spacer} />
         {children}
-        <Box height={50}></Box>
+        <Box style={{ height: '20%' }} />
         <Footer />
       </Container>
     </main>

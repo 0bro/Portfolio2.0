@@ -1,0 +1,4 @@
+.marquee {
+  mask: radial-gradient(circle, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
