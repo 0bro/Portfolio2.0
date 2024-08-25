@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import FaviHref from './../../public/icon.ico';
 import FaviAppleHref from './../../public/apple-touch-icon.png';
+import ParticlesView from './components/ParticlesView';
 
 export const metadata = {
   title: 'Ibrahims Portfolio',
@@ -34,7 +35,9 @@ export default function RootLayout({ children }) {
           sizes="32x32"
         />
       </Head>
-      <body>{children}</body>
+      <body>
+        <ParticlesView/>
+        {children}</body>
     </html>
   );
 }
